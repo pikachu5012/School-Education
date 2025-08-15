@@ -1,20 +1,100 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #FFF5F0;
+body {
+  background-color: #fff5f0;
 }
-header{
-    width: 100%;
+header {
+  width: 100%;
 }
-.container{
-    display: block;
-    width: 95%;
-    align-content: center;
+.container {
+  display: block;
+  width: 95%;
+  align-content: center;
 }
 
-.photo img{
-    width: 100%;
+.photo img {
+  width: 100%;
 }
+
+/*Start  Section OUR BENEFITS */
+.ourBenefits {
+  /* padding: 1.25rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.benefits {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 6rem;
+}
+.benefitHeader {
+  font-size: 3.625rem;
+  margin-bottom: 1.25rem;
+}
+.benefitsCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+}
+.card {
+  position: relative;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  background: #fff;
+  gap: 15px;
+  border-radius: 12px;
+  border: 2px solid;
+  box-shadow: 5px 10px #000000;
+  margin: 20px;
+  padding-inline: 30px;
+  padding-block: 70px;
+}
+.card .iconContainer {
+  position: absolute;
+  padding-inline: 0.75rem;
+  padding-block: 0.75rem;
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: #ffdecc;
+  top: -12%;
+  left: 7%;
+  text-align: center;
+
+  img {
+    width: 75%;
+  }
+}
+.cardTextContainer {
+  text-align: left;
+}
+.cardTextContainer p {
+  line-height: 35px;
+  font-size: 22px;
+}
+.cardTextContainer h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 32px;
+}
+.btnBenefits {
+  background-color: white;
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+/* End Section OUR BENEFITS */
