@@ -144,3 +144,113 @@ ul li button:hover{
 .bot-half-right-side p{
     font-size: 1.125rem;
 }
+/* tareq */
+.photo img {
+  width: 100%;
+}
+
+.freq-quest-sec {
+  text-align: center;
+}
+
+.fqs-part-a {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fqs-part-a span {
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  font-size: 18px;
+  color: #333333;
+  font-weight: 300;
+}
+
+.fqs-part-a h2 {
+  display: block;
+  font-weight: 700;
+  font-size: 58px;
+  color: #1a1a1a;
+  margin: 20px;
+}
+
+.fqs-part-a p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.fqs-part-b {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.fqs-part-b-right {
+  width: 50%;
+}
+
+.fqs-part-b-left {
+  width: 50%;
+}
+
+.quest {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #000;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  padding-right: 10%;
+}
+
+.q-a {
+  width: 95%;
+  text-align: left;
+  margin: 20px;
+}
+
+.q-a p {
+  font-size: 22px;
+}
+
+.quest button {
+  position: absolute;
+  top: -3px;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  margin: 20px;
+  background-color: #fff5f0;
+  border-radius: 5px;
+}
+
+.answer-div hr {
+  margin-top: 10px;
+}
+
+.answer-div p {
+  margin-top: 10px;
+}
+
+#Q1,
+#Q2,
+#Q3,
+#Q4,
+#Q5,
+#Q6,
+#Q7,
+#Q8 {
+  display: none;
+}
+
+.selected {
+  background-color: #ffffff;
+}
+
+.not-selected {
+  background-color: #ffefe5;
+}
