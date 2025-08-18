@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 *{
-    margin: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 :root {
-    --main-transition: 100ms ease-in-out;
-    --background-color: #FFF5F0;
-    --uni-color: #FF8D4D;
-    --components-bg-color: #FFEFE5;
-    --shadow-color: #FFBE99;
-
+  --main-transition: 100ms ease-in-out;
+  --background-color: #FFF5F0;
+  --uni-color: #FF8D4D;
+  --components-bg-color: #FFEFE5;
+  --shadow-color: #FFBE99;
+  --btns-shadow: #1E1E1E;
+}
+html{
+  font-size: 16px;
+  line-height: 1.5;
 }
 body{
     background-color: var(--background-color);
@@ -20,25 +24,26 @@ a{
     text-decoration: none;
     color: black;
 }
-header{
-    overflow: visible;
+button{
+  cursor: pointer;
+}
+.main-containers{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    margin-bottom: 5%;
 }
 .container{
     width: 95%;
     margin-top: 1%;
     margin-bottom: 1%;
 }
+/* =========================  home section =========================  */
 .photo img{
     width: 100%;
 }
-.navigate{
-    position: sticky;
-    top: 0;
+.navi{
     width: 100%;
 }
 nav{
@@ -47,9 +52,26 @@ nav{
     align-items: center;
     justify-content: space-between;
     height: 5em;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 12px;
-    background-color: var(--background-color);
+    background-color: #ffffff;
+}
+nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 15%;
+    background-color: var(--uni-color);
+    border-radius: 12px 0px 0px 12px;
+    border-right: 2px solid black;
+}
+nav a img{
+  height: 50px;
+}
+nav a span{
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 ul{
     display: flex;
@@ -59,17 +81,19 @@ ul{
     width: 50%;
     height: 100%;
     padding: 0px;
-    /* border: 1px solid red; */
 }
 ul li{
     height: 100%;
     width: 17%;
 }
+.active{
+  background-color: var(--components-bg-color);
+}
 ul li button{
     cursor: pointer;
     height: 100%;
     border: 0;
-    border-left: 1px solid black;
+    border-left: 2px solid black;
     width: 100%;
     background-color: transparent;
     transition: var(--main-transition);
@@ -84,7 +108,6 @@ ul li button:hover{
 .main{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
 }
 .hero-left-side{
@@ -106,7 +129,7 @@ ul li button:hover{
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 100%;
+    /* height: 100%; */
     justify-content: center;
     gap: 6%;
 }
@@ -144,6 +167,7 @@ ul li button:hover{
 .bot-half-right-side p{
     font-size: 1.125rem;
 }
+/* =========================  home section =========================  */
 /* tareq */
 .photo img {
   width: 100%;
@@ -253,4 +277,129 @@ ul li button:hover{
 
 .not-selected {
   background-color: #ffefe5;
+}
+
+/* =========================  navigation section =========================  */
+.navigate{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.top-of-sections{
+  background-color: #ffffff;
+  border: 2px solid black;
+  height: auto;
+  border-radius: 8px;
+  line-height: 2.5rem;
+  padding: 0.5rem 1rem;
+}
+.navigate h2{
+  font-size: 3rem;
+  margin: 2%;
+  font-weight: 700;
+}
+.nav-para{
+  font-size: 1rem;
+  color: #333333;
+  margin: 0px 18%;
+}
+.nav-cards{
+  display: flex;
+  flex-direction: row;
+  gap: 6%;
+  margin: 5% 0%;
+}
+.nav-card{
+  width: 50%;
+  height: auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+  border: 1px solid black;
+  box-shadow: 4px 4px 0px 2px var(--btns-shadow);
+  font-family: var(--special-font);
+}
+.nav-card h3{
+  font-size: 2rem;
+  margin: 10% 0 0 0;
+}
+/* ========================= shaper ========================= */
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* space between segments */
+  width: 75%;
+  z-index: 1;
+  margin: 10% 0 0 0;
+}
+.nav-circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: white;
+}
+.nav-line {
+  flex: 1; /* stretch evenly */
+  height: 2px;
+  background: black;
+  position: relative;
+}
+.nav-line::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: var(--shadow-color); /* background highlight */
+  z-index: -1; /* put behind line */
+  border-radius: 2px;
+}
+/* ========================= shapes ========================= */
+.nav-card p{
+  font-size: 1.25rem;
+  padding: 0% 3%;
+  margin: 15% 0;
+}
+.nav-card button{
+  width: 85%;
+  height: 4rem;
+  font-size: 1.25rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: var(--components-bg-color);
+  box-shadow: 2px 2px 0px 2px var(--btns-shadow);
+  transition: var(--main-transition);
+  margin: 0 0 10% 0;
+}
+.nav-card button:active{
+  box-shadow: 2px 2px 0px 2px var(--shadow-color);
+}
+/* =========================  navigation section =========================  */
+
+@media screen and (max-width: 757px) {
+  .navigate .container h2{
+      font-size: 2.5rem;
+      margin: 2%;
+  }
+  .nav-para{
+      font-size: 1rem;
+      color: #333333;
+      margin: 0% 0%;
+  }
+  .nav-cards{
+      flex-direction: column;
+      margin: 5% 0%;
+      align-items: center;
+  }
+  .nav-card{
+      width: 95%;
+      margin: 5% 0;
+  }
 }

@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
+    <header class="main-containers">
         <div class="top-banner container">
             <a href="" class="photo">
                 <img src="assets/Top Banner.svg" alt="">
             </a>
-            <div class="container navigate">
+            <div class="container navi">
                 <nav>
                     <a href="#">
-                        <i></i>
+                        <img src="assets/shape-14.svg" alt="">
                         <span>Little Learners</span>
                     </a>
                     <ul>
-                        <li><button>Home</button></li>
+                        <li><button class="active">Home</button></li>
                         <li><button>About Us</button></li>
                         <li><button>Academics</button></li>
                         <li><button>Admissions</button></li>
@@ -34,10 +35,10 @@
                 <div class="image">
                     <img src="assets/Image.svg" alt="two-children">
                 </div>
-                    <div class="circle" style="width:25px; height:25px; top: -2%; left:-1.5%;"></div>
-                    <div class="circle" style="width:25px; height:25px; top:98%; left:-1.5%;"></div>
-                    <div class="circle" style="width:25px; height:25px; top:98%; left:98.5%;"></div>
-                    <div class="circle" style="width:25px; height:25px; top:-2%; left:98.5%;"></div>
+                <div class="circle" style="width:25px; height:25px; top: -2%; left:-1.5%;"></div>
+                <div class="circle" style="width:25px; height:25px; top:98%; left:-1.5%;"></div>
+                <div class="circle" style="width:25px; height:25px; top:98%; left:98.5%;"></div>
+                <div class="circle" style="width:25px; height:25px; top:-2%; left:98.5%;"></div>
             </div>
             
             <div class="hero-right-side">
@@ -67,7 +68,7 @@
     </header>
     <section class="ourBenefits"></section>
     <section class="ourTest"></section>
-    <section class="freq-quest-sec">
+    <section class="freq-quest-sec" style="display: none;">
     <!-- By Tarek B7R -->
     <div class="fqs-part-a">
     <span>Solutions For The Doubts</span>
@@ -248,7 +249,90 @@
     </div>
     </div>
     </section>
-    <section class="navigate"></section>
+    <section class="main-containers">
+        <div class="navigate container">
+            <div class="top-of-sections">Explore More</div>
+            <h2>Navigate through our Pages</h2>
+            <p class="nav-para">
+                Your gateway to discovering a wealth of valuable information about our kindergarten school, Feel free to explore and learn
+                more about the enriching experiences that await your child at our kindergarten school
+            </p>
+            <div class="nav-cards">
+                <div class="nav-card">
+                    <h3>About Us</h3>
+                    <div class="stepper">
+                        <div class="nav-circle"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-circle"></div>
+                    </div>
+                    <p>
+                        Discover our Mission, Values, and our unwavering commitment to providing the best learning experience for your child.
+                        Learn about our passionate educators and our engaging approach to early education.
+                    </p>
+                    <button>Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="nav-card">
+                    <h3>Academics</h3>
+                    <div class="stepper">
+                        <div class="nav-circle"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-circle"></div>
+                    </div>
+                    <p>
+                        Delve into our comprehensive academic programs designed to stimulate young minds, 
+                        foster creativity, and encourage a love for learning. Explore our well-rounded curriculum 
+                        that nurtures both intellectual and social development.
+                    </p>
+                    <button>Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="nav-cards">
+                <div class="nav-card">
+                    <h3>Student Life</h3>
+                    <div class="stepper">
+                        <div class="nav-circle"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-circle"></div>
+                    </div>
+                    <p>
+                        Peek into the vibrant and enriching world of Student Life at Little Learners Academy. 
+                        Discover the array of extracurricular activities, arts and crafts, sports, and social 
+                        events that make our school experience truly memorable.
+                    </p>
+                    <button>Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="nav-card">
+                    <h3>Admissions</h3>
+                    <div class="stepper">
+                        <div class="nav-circle"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-line"></div>
+                        <div class="nav-circle"></div>
+                    </div>
+                    <p>
+                        Learn about our Enrollment Process and how to secure your child's place at Little Learners Academy. 
+                        Find information about our admission requirements, application deadlines, and available spaces.
+                    </p>
+                    <button>Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer></footer>
     <script src="script.js"></script>
 </body>
