@@ -553,6 +553,7 @@ ul li button:hover{
   text-align: center;
 }
 /* =========================  End of footer section =========================  */
+
 /* media of navigation section */
 @media screen and (max-width: 757px) {
   .navigate .container h2 {
