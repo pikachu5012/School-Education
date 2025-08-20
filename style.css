@@ -553,7 +553,7 @@ ul li button:hover{
   text-align: center;
 }
 /* =========================  End of footer section =========================  */
-
+/* media of navigation section */
 @media screen and (max-width: 757px) {
   .navigate .container h2 {
     font-size: 2.5rem;
@@ -572,5 +572,44 @@ ul li button:hover{
   .nav-card {
     width: 95%;
     margin: 5% 0;
+  }
+}
+/* media of footer */
+@media screen and (max-width: 757px){
+  .top-footer{
+    flex-direction: column;
+  }
+  .left-side{
+    align-items: center;
+    text-align: center;
+  }
+  .right-side{
+    flex-wrap: wrap;
+  }
+  .footer-col{
+    width: 50%;
+  }
+  .right-side :nth-child(1){order: 1;}
+  .right-side :nth-child(2){order: 3;}
+  .right-side :nth-child(3){order: 2;}
+  .right-side :nth-child(4){order: 4;}
+  .mid-footer{
+    flex-direction: column;
+  }
+  .mid-footer-left-side{
+    width: 100%;
+    justify-content: center;
+  }
+  .mid-footer-right-side{
+    width: 100%;
+    justify-content: center;
+  }
+  .contact-info{
+    align-items: center;
+  }
+  .footer-icons{
+    justify-content: flex-start;
+    width: 120%;
+    margin: 7% 0;
   }
 }
