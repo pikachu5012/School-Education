@@ -578,6 +578,96 @@ hr {
 }
 /* =========================  End of footer section =========================  */
 
+/* responsive header */
+@media screen and (max-width: 757px) {
+    html{
+        font-size: 0.6rem;
+    }
+    .photo :nth-child(1){
+        display: none;
+    }
+    .img2{
+        width: 100%;
+        display: block;
+    }
+    nav{
+        height: 7em;
+    }
+    nav a{
+        width: 40%;
+    }
+    .nav-ul{
+        display: none;
+        position: fixed;
+        width: 50%;
+        height: 64%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #ccc;
+        z-index: 1000;
+        flex-direction: column;
+        border: 2px solid black;
+        border-radius: 19px;
+        overflow: hidden;
+    }
+    .nav-ul.open-popup{
+        display: flex;
+    }
+    .nav-ul li{
+        display: flex;
+        justify-content: center; 
+        height: 100%;
+        width: 100%;
+        border-bottom: 1px solid black;
+        background: var(--uni-color);
+    }
+    #contact:hover{
+        background-color: var(--components-bg-color);
+        border-radius: 0px 0px 0px 0px;
+    }
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        display: none;
+    }
+    .overlay.active {
+        display: block;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .nav-logo img{
+        width: 90%;
+    }
+    .hero-left-side{
+        width: 100%;
+    }
+    .hero-right-side{
+        align-items: center;
+        width: 100%;
+        margin-top: 10%;
+        text-align: center;
+    }
+    .hero-right-side h1 {
+        font-size: 3rem;
+        margin: 3% 8%;
+    }
+    .bot-half-right-side{
+        flex-direction: column;
+    }
+    hr{
+        display: block;
+    }
+}
 /* media of navigation section */
 @media screen and (max-width: 757px) {
   .navigate .container h2 {
