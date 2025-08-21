@@ -15,10 +15,6 @@ header {
   align-content: center;
 }
 
-.photo img {
-  width: 100%;
-}
-
 /*Start  Section OUR BENEFITS */
 .ourBenefits {
   /* padding: 1.25rem; */
@@ -44,7 +40,7 @@ header {
   justify-content: center;
   gap: 1.25rem;
 }
-.card {
+.card-benefits {
   position: relative;
   width: 25%;
   display: flex;
@@ -60,7 +56,7 @@ header {
   padding-inline: 30px;
   padding-block: 70px;
 }
-.card .iconContainer {
+.card-benefits .iconContainer {
   position: absolute;
   padding-inline: 0.75rem;
   padding-block: 0.75rem;
