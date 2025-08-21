@@ -13,22 +13,24 @@
         <div class="top-banner container">
             <a href="" class="photo">
                 <img src="assets/Top Banner.svg" alt="">
+                <img src="assets/Top Banner 2.svg" alt="" class="img2">
             </a>
             <div class="container navi">
                 <nav>
-                    <a href="#">
-                        <img src="assets/shape-14.svg" alt="">
-                        <span>Little Learners</span>
+                    <a href="" class="nav-logo">
+                        <img src="assets/logo.svg" alt="">
                     </a>
-                    <ul class="nav-ul">
-                        <li><button class="active">Home</button></li>
-                        <li><button>About Us</button></li>
-                        <li><button>Academics</button></li>
-                        <li><button>Admissions</button></li>
-                        <li><button>Student Life</button></li>
-                        <li><button id="contact">Contact</button></li>
+                    <button class="menu-icon"><i class="fa-solid fa-bars-staggered" ></i></button>
+                    <ul class="nav-ul" id="popup">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Academic</a></li>
+                        <li><a href="#">Admissions</a></li>
+                        <li><a href="#">Student Life</a></li>
+                        <li  id="contact"><a href="#">Contact</a></li>
                     </ul>
                 </nav>
+                <div id="overlay" class="overlay"></div>
             </div>
         </div>
         <div class="main container">
@@ -36,14 +38,14 @@
                 <div class="image">
                     <img src="assets/Image.svg" alt="two-children">
                 </div>
-                <div class="circle" style="width:25px; height:25px; top: -2%; left:-1.5%;"></div>
-                <div class="circle" style="width:25px; height:25px; top:98%; left:-1.5%;"></div>
-                <div class="circle" style="width:25px; height:25px; top:98%; left:98.5%;"></div>
-                <div class="circle" style="width:25px; height:25px; top:-2%; left:98.5%;"></div>
+                <div class="circle" style="width:25px; height:25px; top: -2%; left: -2.5%;"></div>
+                <div class="circle" style="width:25px; height:25px; bottom: -2%; left: -2.5%;"></div>
+                <div class="circle" style="width:25px; height:25px; bottom: -2%; right: -2.5%;"></div>
+                <div class="circle" style="width:25px; height:25px; top: -2%; right: -2.5%;"></div>
             </div>
             
             <div class="hero-right-side">
-                <span class="welcome-span">Welcome to Little Learners Academy</span>
+                <div class="welcome-span">Welcome to Little Learners Academy</div>
                 <h1>Where Young Minds Blossom and <span class="special">Dreams Take Flight.</span></h1>
                 <p>
                     Our kinder garden school provides a nurturing and stimulating environment,
@@ -52,15 +54,17 @@
                 </p>
                 <div class="bot-half-right-side">
                     <div>
-                        <h3>+7000</h3>
+                        <h3>+<span id="counter1">7000</span></h3>
                         <p>Students Passed Out</p>
                     </div>
+                    <hr>
                     <div>
-                        <h3>+37</h3>
+                        <h3>+<span id="counter2">37</span></h3>
                         <p>Awards & Recognitions</p>
                     </div>
+                    <hr>
                     <div>
-                        <h3>+15</h3>
+                        <h3>+<span id="counter3">15</span></h3>
                         <p>Experience Educators</p>
                     </div>
                 </div>
