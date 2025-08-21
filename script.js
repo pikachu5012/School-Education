@@ -40,3 +40,44 @@ function expand(divId) {
     }
   }
 }
+
+// pop up on the nav
+let popup = document.getElementById("popup");
+let overlay = document.getElementById("overlay");
+function openPopup() {
+    popup.classList.add("open-popup");
+    overlay.classList.add("active"); 
+}
+function closePopup() {
+    popup.classList.remove("open-popup");
+    overlay.classList.remove("active"); 
+}
+
+overlay.addEventListener("click", function() {
+    closePopup();
+});
+
+
+//the counter in the header section
+function animateCounter(id, start, end, duration) {
+    let obj = document.getElementById(id);
+    let current = start;
+    let range = end - start;
+    let increment = Math.ceil(range / 100);
+    let steps = range / increment;
+    let stepTime = Math.max(Math.floor(duration / steps), 1);
+    let timer = setInterval(function() {
+    current += increment;
+    if (current >= end) {
+        current = end;
+        clearInterval(timer);
+    }
+    obj.textContent = current.toLocaleString();
+    }, stepTime);
+}
+
+window.onload = function() {
+    animateCounter("counter1", 1, 7000, 1500);
+    animateCounter("counter2", 1, 37, 1500);
+    animateCounter("counter3", 1, 15, 1500);
+};
