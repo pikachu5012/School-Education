@@ -97,6 +97,9 @@ nav{
     padding: 1%;
     white-space: nowrap;
 }
+.nav-ul li a:active{
+  background-color: var(--uni-color);
+}
 .nav-ul li:hover{
     background-color: var(--components-bg-color);
 }
@@ -110,7 +113,6 @@ nav{
     cursor: pointer;
 }
 #contact{
-    background-color: var(--uni-color);
     border-radius: 0px 12px 12px 0px;
 }
 .main{
@@ -350,14 +352,6 @@ hr {
 
 }
 
-
-
-
-
-/* .my-container{
-  padding: 2rem;
-  width: 100%;
-} */
 .content {
     width: 75%;
     display: flex;
