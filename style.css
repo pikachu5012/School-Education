@@ -202,6 +202,111 @@ hr {
     width: 80%;
 }
 /* =========================  home section =========================  */
+/* =========================  our-benefits section =========================  */
+.ourBenefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.benefits {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 6rem;
+}
+.benefitHeader {
+  font-size: 3.625rem;
+  margin-bottom: 1.25rem;
+}
+.benefitsCards {
+  display: flex;
+  width: 100%;
+  gap: 5rem;
+  flex-direction: column;
+}
+.top-side-benefits{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.card-benefits {
+  position: relative;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  gap: 15px;
+  border-radius: 12px;
+  border: 2px solid;
+  box-shadow: 6px 6px 2px #000000;
+  padding: 4%;
+  align-items: center;
+}
+.card-benefits .iconContainer {
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: #ffdecc;
+  top: -8%;
+  left: 7%;
+  text-align: center;
+  width: 4.5rem;
+  padding: 4%;
+}
+.iconContainer i{
+  font-size: 1.5rem;
+}
+.cardTextContainer {
+  text-align: left;
+}
+.cardTextContainer p {
+  line-height: 35px;
+  font-size: 22px;
+}
+.cardTextContainer h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 32px;
+}
+.btnBenefits {
+  background-color: white;
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+@media screen and (max-width:910px){
+  .card-benefits .iconContainer{
+  top: -6%;
+}
+}
+@media screen and (max-width:757px){
+  .top-side-benefits {
+      flex-direction: column;
+      align-items: center;
+      gap: 6rem;
+}
+.card-benefits {
+  width: 75%;
+  height: 20rem;
+  justify-content: center;
+}
+}
+@media screen and (max-width:405px) {
+  .card-benefits {
+      height: 30rem;
+}
+.card-benefits .iconContainer{
+  top: -5%;
+  left: auto;
+}
+}
+/* =========================  our-benefits section =========================  */
 /* tareq */
 .photo img {
   width: 100%;
@@ -580,9 +685,9 @@ hr {
 
 /* responsive header */
 @media screen and (max-width: 757px) {
-    html{
+    /* html{
         font-size: 0.6rem;
-    }
+    } */
     .photo :nth-child(1){
         display: none;
     }
