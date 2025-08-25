@@ -351,9 +351,11 @@ hr {
   right: -2em !important; 
 
 }
-
+.my-container{
+  width: 100%;
+}
 .content {
-    width: 75%;
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 0.5%;
@@ -366,7 +368,7 @@ hr {
   gap: 2rem;
   overflow-x: hidden;
   align-items: flex-start;
-  width: 64%;
+  width: 75%;
   padding: 1rem;
 }
 .content .arrow {
