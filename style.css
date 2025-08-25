@@ -481,14 +481,22 @@ h2 {
 }
 @media screen and (max-width: 1200px) {
   .content{
-    width: 50%;
+    width: 100%;
     margin: auto;
+    justify-content: space-between;
+  }
+  .card-container{
+    width: 83.5%;
   }
 }
 @media screen and (max-width: 768px) {
   .content{
-    width: 26%;
+    width: 100%;
     margin: auto;
+    justify-content: center;
+  }
+  .card-container{
+    width: 54%;
   }
 }
 /* end of test section */
